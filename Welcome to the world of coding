@@ -1,4 +1,12 @@
-import keyword
-#Printing all the keywords of Python
-print("Keywords of python are: \n")
-print(keyword.kwlist)
+print("Birthday of 5 friends are: ")
+#Storing date of birth
+a = "12/02/92"
+print("Akash" ,a)
+b = "13/03/93"
+print("Anand" ,b)
+c = "14/05/95"
+print("Harsh", c)
+d = "16/09/97"
+print("Sanjay" ,d)
+e = "21/11/94"
+print("Sachin" ,e)
