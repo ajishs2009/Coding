@@ -1,6 +1,4 @@
-x = 4
-y = "Ajish"
-print(x)
-print(y)
-hobby = input("What's your hobby: ")
-print(hobby)
+import keyword
+#Printing all the keywords of Python
+print("Keywords of python are: \n")
+print(keyword.kwlist)
