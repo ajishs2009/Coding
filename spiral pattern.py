@@ -1,12 +1,12 @@
-import turtle
-my_wn = turtle.Screen().bgcolor('White')
+import turtle     #importing library       
+my_wn = turtle.Screen()
+my_wn.bgcolor("light blue") #screen background color
+my_wn.title("Turtle")
 my_pen = turtle.Turtle()
-num_sides = 4
 size = 0
-while True:
-  for i in range(num_sides):
-    my_pen.forward(size+1)
+while True: #iterate loop
+  for i in range(4): 
+    my_pen.f(size + 1)
     my_pen.left(90)
-    size = size-5
-  size = size+1
-  turtle.done()
+    size = size - 5
+  size = size + 1
