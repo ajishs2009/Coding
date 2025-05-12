@@ -16,8 +16,7 @@ def rent_car(days):
         return 40*days - 20
     else:
         return 40*days
-def trip_cost(city, days, spending_cost):
-    return rent_car(days) + plane_cost(city) + hotel_cost(days) + spending_cost
+
 print("Cost of rent car:", rent_car(5))
 print("Cost of hotel:", hotel_cost(5))
 print("Cost of plane ticket:", plane_cost("Los Angeles"))
