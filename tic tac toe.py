@@ -11,22 +11,22 @@ def printBoard(board):
     print('-+-+-')
     print(board['1'] + '|'+board['2'] + '|'+board['3']) 
 
-def game(x):
+def game():
     turn = 'X'
     count = 0
 
     for i in range(10):
-       printBoard(theBoard)
-       print("It's your turn" + turn +'Move to which place')
-       move = input()
+        printBoard(theBoard)
+        print("It's your turn" + turn +'Move to which place')
+        move = input()
        
-       if theBoard[move] == ' ':
+        if theBoard[move] == ' ':
            theBoard[move] = turn
            count = count+1
-       else:
+        else:
            print('The spot is filled! Try again')
            continue
-       if count>=5:
+        if count>=5:
             if theBoard['7'] == theBoard['8'] == theBoard['9']!= ' ':
                printBoard(theBoard)
                print('\nGame Over.')
@@ -67,6 +67,22 @@ def game(x):
                print('\nGame Over.')
                print('Player' + turn + 'has won')
                break
+        if count == 9:
+         print('Game Over!')
+         print("It's a tie!!!")
+        if turn == 'X':
+           turn = '0'
+        else:
+           turn == 'X'
+    restart = input("Do want to play Again?(y/n)")
+    if restart == "y" or restart == "Y":  
+        for key in board_keys:
+            theBoard[key] = " "
+
+        game()
+
+if __name__ == "__main__":
+    game()
 
 
 

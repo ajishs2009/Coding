@@ -1,5 +1,5 @@
 def Multiple_tuple(nums):
-    numbers = list(nums)
+    numbers = nums
     product = 1
     for x in numbers:
         product *= x
