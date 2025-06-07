@@ -10,4 +10,4 @@ class test_class(absclass):
         print('We are inside test_class')
 test_obj = test_class()
 test_obj.task()
-test_obj.print(10)
+test_obj.print(10   )
